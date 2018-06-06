@@ -9,7 +9,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/"
+            "savePath": "/dist/"
         },
         {
             "extensionName": ".min.css",
@@ -27,5 +27,25 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ]
+    ],
+    "easysass.targetDir": "dist/",
+    "easysass.formats": [
+        {
+            "format": "expanded",
+            "extension": ".css"
+        },
+        {
+            "format": "compressed",
+            "extension": ".min.css"
+        }
+    ],
+    "easysass.excludeRegex": "[^(?!main.scss).+|^(?!userstyle.css).+]",
+    "easysass.compileAfterSave": true,
+    "macros": {
+        "scss": [
+            "workbench.action.files.save",
+            "easysass.compileAll"
+        ]
+    },
+    "liveServer.settings.port": 5500
 }

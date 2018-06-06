@@ -1,5 +1,4 @@
 .Header {
-  background: -webkit-gradient(linear, left top, right top, from(#22276c), color-stop(#586aa5), to(#a9c7f6));
   background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
 }
 
@@ -43,7 +42,6 @@ body {
 }
 
 .select-menu-modal .select-menu-header, .select-menu-modal .select-menu-divider {
-  background: -webkit-gradient(linear, left top, right top, from(#22276c), color-stop(#586aa5), to(#a9c7f6));
   background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
 }
 
@@ -223,4 +221,12 @@ table.files {
 
 .btn:hover {
   border-right-width: 2px !important;
+}
+
+.issues-listing .subnav form input.subnav-search-input {
+  border-radius: 2px;
+  border-bottom: 2px inset #ddd;
+  border-right: 2px inset #ddd;
+  border-left: 2px inset #999;
+  border-top: 2px inset #999;
 }

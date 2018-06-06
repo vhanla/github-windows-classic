@@ -5,6 +5,10 @@
   border-left: #{$borderWidth} solid #ddd;
   border-top: #{$borderWidth} solid #ddd;
 }
-@mixin border-inset{
-
+@mixin border-inset($borderWidth){
+  border-radius: #{$borderWidth};
+  border-bottom: #{$borderWidth} inset #ddd;
+  border-right: #{$borderWidth} inset #ddd;
+  border-left: #{$borderWidth} inset #999;
+  border-top: #{$borderWidth} inset #999;
 }

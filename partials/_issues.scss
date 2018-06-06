@@ -1,0 +1,7 @@
+.issues-listing{
+  .subnav{
+    form input.subnav-search-input{
+      @include border-inset(2px);
+    }
+  }
+}
