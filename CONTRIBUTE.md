@@ -11,6 +11,8 @@ The development of this custom userstyle is made easy using the following tools:
   It requires the following extensions:
   - [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
   - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (Live Sass Compiler installs)
+  - Optionally you could use [Easy Sass](https://marketplace.visualstudio.com/items?itemName=spook.easysass) instead of Live Sass Compiler
+
 - Firefox
   - Disable [CSP](#csp) to load your local user style.
   It also requires the following add-ons:
@@ -37,18 +39,37 @@ FireFox will warn you when accessing the site served by Live Reload, press advan
 
 You also need to launch Watch Sass from status bar in VSCode, it will compile the sass files.
 
+## Optional (Easy Sass)
+
+It seems that this extension is better for the following reasons:
+- It offers a command to compile all files
+- It allows to exclude files to compile
+
+So you can set a [macro](https://marketplace.visualstudio.com/items?itemName=geddski.macros) to trigger after saving any .scss file, and it will compile the `main.scss` and `userstyle.scss` files for our specific project.
+
+To set that macro, install that macro extension, and add a custom keybinding (F1, then write Open Keyboard Shorcuts File) and add the following:
+
+```json
+{
+  "key": "ctrl+s",
+  "command": "macros.scss",
+  "when": "editorTextFocus && editorLangId == 'scss'"
+}
+```
+So each, time you save it will trigger the macro, which is already set up on .vscode/settings.json file. You can always avoid that macro extension and directly call the `easysass.compileAll` command instead of `macros.scss` in the `command` section in the keybinding file.
+
 ## How to sync Live Reload and Github site?
 
 Open **Super CSS Inject** preferences from Add-Ons page (Ctrl+Shift+A) and add the full URL path to the compiled main.css file.
 
-e.g. https://127.0.0.1:5500/main.css
+e.g. https://127.0.0.1:5500/dist/main.css
 
 Click **Live Reload** add-on icon and Create a new reload rule.
 Fill the inputs.
 Title, whatever your want.
 Host Url: https://github.com/*
 Source File URLs:
-https://127.0.0.1:5500/main.css
+https://127.0.0.1:5500/dist/main.css
 
 Bare in mind, port must match with whatever VSCode's Live Reload assigned you.
 Use the other default settings and save.
