@@ -63,6 +63,10 @@ body {
   background-color: #32477a;
 }
 
+.blob-wrapper {
+  background-color: white;
+}
+
 /*Dashboard*/
 .dashboard .dashboard-sidebar {
   border-radius: 2px;
