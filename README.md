@@ -16,7 +16,7 @@ Give GitHub a Windows Classic look
 
 ## Updating
 
-Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/160991/github-windows-classic) or [GitHub](https://raw.githubusercontent.com/vhanla/master/dist/userstyle.min.css) before opening an issue. Note that only Stylish for Firefox performs automatic style updates.
+Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/160991/github-windows-classic) or [GitHub](https://raw.githubusercontent.com/vhanla/github-windows-classic/master/dist/userstyle.min.css) before opening an issue. Note that only Stylish for Firefox performs automatic style updates.
 
 
 ## Contributions
