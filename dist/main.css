@@ -316,3 +316,25 @@ table.files {
   border-left: 2px inset #999;
   border-top: 2px inset #999;
 }
+
+#discussion_bucket .discussion-timeline .js-discussion.js-socket-channel .timeline-comment-wrapper.js-comment-container {
+  border-radius: 2px;
+  border-bottom: 2px inset #ddd;
+  border-right: 2px inset #ddd;
+  border-left: 2px inset #999;
+  border-top: 2px inset #999;
+}
+
+#discussion_bucket .discussion-timeline .js-discussion.js-socket-channel .timeline-comment-wrapper.js-comment-container .avatar-parent-child.timeline-comment-avatar {
+  margin-top: 4px;
+  margin-left: -56px;
+}
+
+#discussion_bucket .discussion-timeline .discussion-timeline-actions {
+  border-radius: 2px;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  border-left: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  padding: 4px;
+}

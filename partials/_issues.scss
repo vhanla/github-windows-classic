@@ -5,3 +5,21 @@
     }
   }
 }
+
+#discussion_bucket{
+  .discussion-timeline{
+    .js-discussion.js-socket-channel{
+      .timeline-comment-wrapper.js-comment-container{
+        @include border-inset(2px);
+        .avatar-parent-child.timeline-comment-avatar{
+          margin-top: 4px;
+          margin-left: -56px;
+        }
+      }
+    }
+    .discussion-timeline-actions{
+      @include border-outset(2px);
+      padding: 4px;
+    }
+  }
+}
