@@ -1,0 +1,31 @@
+body
+{
+  background-color: $window-color;
+}
+
+.select-menu-button,
+  .select-menu-button:hover{
+    @include border-outset(2px);
+    background-image: none;
+    background-color: #d4d2cd;
+  }
+  .select-menu-modal {
+    @include border-outset(2px);
+    background-image: none;
+    background-color: #d4d2cd;
+    .select-menu-header, .select-menu-divider{
+      background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
+      span{
+        color: white;
+      }
+    }
+    .select-menu-item{
+      background: none;
+      a{
+        color: black;
+      }
+      &.navigation-focus{
+        background-color: #32477a;
+      }
+    }
+  }

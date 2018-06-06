@@ -1,0 +1,31 @@
+{
+    "liveServer.settings.https": {
+        "enable": true,
+        "cert": "./localssl/server.crt",
+        "key": "./localssl/server.key",
+        "passphrase": "github"
+    },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/dist/"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "**/modules/**",
+        "**/partials/**"
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

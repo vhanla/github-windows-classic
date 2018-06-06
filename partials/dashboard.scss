@@ -1,0 +1,64 @@
+/*Dashboard*/
+.dashboard{
+
+  .dashboard-sidebar {
+   @include border-outset(2px);
+  }
+
+  .message{
+    @include border-outset(2px);
+    .notice-dismiss{
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      @include border-outset(2px);
+      background-image: none;
+      background-color: #d4d2cd;
+    }
+  }
+
+  .push
+  {
+    border: initial;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-bottom: 2px solid #999!important;
+    border-right: 2px solid #999;
+  }
+
+  .release
+  {
+    padding: 4px;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-bottom: 2px solid #999!important;
+    border-right: 2px solid #999;
+  }
+
+  .Details
+  {
+    border-top: inset 2px #999;
+    border-left: inset 2px #999;
+    border-bottom: inset 2px #ddd!important;
+    border-right: inset 2px #ddd;
+  }
+
+  .news .Details
+  {
+    border: 0;
+  }
+
+  .Details .Box
+  {
+    padding: 4px;
+    margin: 4px;
+    border: initial;
+    border-top: inset 2px #999;
+    border-left: inset 2px #999;
+    border-bottom: inset 2px #ddd!important;
+    border-right: inset 2px #ddd;
+  }
+
+}
+
+

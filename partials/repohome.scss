@@ -1,0 +1,102 @@
+.jump-to-field-active-non-empty
+{
+  border: 0;
+  border-radius: 0;
+}
+
+.form-control input
+{
+  color: black!important;
+}
+
+.overall-summary.overall-summary-bottomless
+{
+  border-radius: 0;
+  border-top: inset 2px #999;
+  border-left: inset 2px #999;
+  border-bottom: inset 0px #ddd;
+  border-right: inset 2px #ddd;
+  background-color: #fff;
+}
+
+.repository-lang-stats-graph.js-toggle-lang-stats
+{
+  border-radius: 0;
+  border-top: inset 0px #999;
+  border-left: inset 2px #999;
+  border-bottom: inset 2px #ddd;
+  border-right: inset 2px #ddd;
+}
+
+.repository-lang-stats-graph.js-toggle-lang-stats span
+{
+  border-radius: 0!important;
+}
+
+.commit-tease.js-details-container.Details.d-flex
+{
+  background-color: #fff;
+  border-radius: 0;
+  border-top: inset 2px #999;
+  border-left: inset 2px #999;
+  border-bottom: inset 2px #ddd;
+  border-right: inset 2px #ddd;
+}
+
+.file-wrap
+{
+  margin-top: 12px;
+  border: initial;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+}
+
+table.files
+{
+  margin: 10px;
+  width: 98%;
+  border-radius: 0;
+  border-collapse: inherit;
+  border-top: inset 2px #999;
+  border-left: inset 2px #999;
+  border-bottom: inset 2px #ddd;
+  border-right: inset 2px #ddd;
+  background-color: #fff;
+}
+
+#readme
+{
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+}
+
+#readme article
+{
+  margin: 12px;
+  border-top: inset 2px #999;
+  border-left: inset 2px #999;
+  border-bottom: inset 2px #ddd;
+  border-right: inset 2px #ddd;
+}
+
+.btn.btn-sm
+{
+  border-radius: 2;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  background-color: #d4d2cd;
+  background-image: inherit;
+  color: black!important;
+  font-weight: 200;
+}
+
+.btn:hover
+{
+  border-right-width: 2px!important;
+}

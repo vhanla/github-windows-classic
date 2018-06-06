@@ -1,0 +1,10 @@
+@mixin border-outset($borderWidth){
+  border-radius: #{$borderWidth};
+  border-bottom: #{$borderWidth} solid #999;
+  border-right: #{$borderWidth} solid #999;
+  border-left: #{$borderWidth} solid #ddd;
+  border-top: #{$borderWidth} solid #ddd;
+}
+@mixin border-inset{
+
+}

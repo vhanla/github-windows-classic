@@ -1,0 +1,20 @@
+.Header
+{
+  background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
+  .header-search-wrapper
+  {
+    border-radius: 0;
+    border-top: inset 2px #999;
+    border-left: inset 2px #999;
+    border-bottom: inset 2px #ddd;
+    border-right: inset 2px #ddd;
+    background-color: #fff;
+    color: black!important;
+  }
+
+}
+
+.mr-2.header-search-key-slash
+{
+  display: none;
+}
