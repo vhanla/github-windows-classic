@@ -103,7 +103,8 @@
     border-left: 2px solid #ddd;
     border-top: 2px solid #ddd;
     border-bottom: 0;
-    border-radius: 12px 12px 0 0;
+    margin-top: 4px;
+    border-radius: 4px 4px 0 0;
     padding: 8px 4px;
   }
   /*Dashboard*/

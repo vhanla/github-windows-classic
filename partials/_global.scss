@@ -58,7 +58,8 @@ body
     .UnderlineNav-item{
       @include border-outset(2px);
       border-bottom: 0;
-      border-radius: 12px 12px 0 0;
+      margin-top: 4px;
+      border-radius: 4px 4px 0 0;
       padding: 8px 4px;
       .selected{}
     }
