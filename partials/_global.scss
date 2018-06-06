@@ -29,9 +29,18 @@ body
     }
   }
 }
-
+.repository-content {
+  .Box{
+    @include border-inset(2px);
+  }
+}
+.commit-tease{
+  @include border-inset(2px);
+}
+// Content Viewer
 .blob-wrapper{
   background-color: white;
+  @include border-inset(2px);
 }
 // TAG buttons
 .topic-tag{
