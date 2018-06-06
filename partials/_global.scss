@@ -25,7 +25,7 @@ body
       color: black;
     }
     &.navigation-focus{
-      background-color: #32477a;
+      background-color: $selected-color;
     }
   }
 }

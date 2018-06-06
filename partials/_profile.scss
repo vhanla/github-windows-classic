@@ -1,0 +1,33 @@
+.logged-in.env-production.page-profile{
+  .user-profile-nav{
+    background-color: $window-color;
+    .UnderlineNav-item{
+      padding: 8px 4px;
+    }
+  }
+  .is-stuck{
+    background-color: white;
+  }
+  .pinned-repo-item{
+    background-color: white;
+  }
+  .profile-timeline-year-list{
+    background-color: $window-color!important;
+    li a{
+      @include border-outset(2px);
+    }
+  }
+  .profile-timeline.discussion-timeline{
+    @include border-inset(2px);
+    background-color: white;
+    padding: 4px;
+  }
+
+  .h-card{
+    .btn{
+      @include border-outset(2px);
+      background-color: $window-color;
+      background-image: none;
+    }
+  }
+}

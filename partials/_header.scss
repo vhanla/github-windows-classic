@@ -18,3 +18,19 @@
 {
   display: none;
 }
+
+#user-links{
+  .dropdown{
+    ul.dropdown-menu{
+      @include border-outset(2px);
+      background-color: $window-color;
+      &:before{
+      }
+    }
+    .dropdown-item{
+      &:hover{
+        background-color: $selected-color;
+      }
+    }
+  }
+}
