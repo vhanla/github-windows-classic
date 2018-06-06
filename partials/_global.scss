@@ -4,32 +4,54 @@ body
 }
 
 .select-menu-button,
-  .select-menu-button:hover{
-    @include border-outset(2px);
-    background-image: none;
-    background-color: #d4d2cd;
-  }
-  .select-menu-modal {
-    @include border-outset(2px);
-    background-image: none;
-    background-color: #d4d2cd;
-    .select-menu-header, .select-menu-divider{
-      background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
-      span{
-        color: white;
-      }
-    }
-    .select-menu-item{
-      background: none;
-      a{
-        color: black;
-      }
-      &.navigation-focus{
-        background-color: #32477a;
-      }
+.select-menu-button:hover{
+  @include border-outset(2px);
+  background-image: none;
+  background-color: #d4d2cd;
+}
+.select-menu-modal {
+  @include border-outset(2px);
+  background-image: none;
+  background-color: #d4d2cd;
+  .select-menu-header, .select-menu-divider{
+    background: linear-gradient(to right, #22276c, #586aa5, #a9c7f6);
+    span{
+      color: white;
     }
   }
+  .select-menu-item{
+    background: none;
+    a{
+      color: black;
+    }
+    &.navigation-focus{
+      background-color: #32477a;
+    }
+  }
+}
 
-  .blob-wrapper{
-    background-color: white;
+.blob-wrapper{
+  background-color: white;
+}
+// TAG buttons
+.topic-tag{
+  @include border-outset(1px);
+  border-top: 0;
+  background-color: #f3f3f3;
+  &:hover{
+    background-color: $window-color;
   }
+}
+
+// TABs
+.UnderlineNav{
+  .UnderlineNav-body{
+    .UnderlineNav-item{
+      @include border-outset(2px);
+      border-bottom: 0;
+      border-radius: 12px 12px 0 0;
+      padding: 8px 4px;
+      .selected{}
+    }
+  }
+}

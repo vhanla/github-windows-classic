@@ -1,6 +1,9 @@
 /*Dashboard*/
 .dashboard{
 
+  .border-bottom{
+    border-bottom: 0!important;
+  }
   .dashboard-sidebar {
    @include border-outset(2px);
   }
@@ -13,34 +16,59 @@
       text-align: center;
       @include border-outset(2px);
       background-image: none;
-      background-color: #d4d2cd;
+      background-color: $window-color;
     }
   }
 
   .push
   {
     border: initial;
-    border-top: 2px solid #ddd;
-    border-left: 2px solid #ddd;
+    @include border-outset(2px);
     border-bottom: 2px solid #999!important;
-    border-right: 2px solid #999;
+    .body{
+      padding: 4px;
+    }
+    .commits{
+      .message{
+        @include border-inset(0);
+      }
+    }
+    .Box
+    {
+      padding: 4px;
+      margin: 4px;
+      border: initial;
+      @include border-inset(2px);
+      border-bottom: inset 2px #ddd!important;
+    }
   }
 
+  .watch_started{
+    padding: 4px;
+    @include border-outset(2px);
+  }
   .release
   {
     padding: 4px;
-    border-top: 2px solid #ddd;
-    border-left: 2px solid #ddd;
-    border-bottom: 2px solid #999!important;
-    border-right: 2px solid #999;
+    @include border-outset(2px);
   }
 
   .Details
   {
-    border-top: inset 2px #999;
-    border-left: inset 2px #999;
-    border-bottom: inset 2px #ddd!important;
-    border-right: inset 2px #ddd;
+    .Box
+    {
+      padding: 4px;
+      margin: 4px;
+      border: initial;
+      @include border-inset(2px);
+      border-bottom: inset 2px #ddd!important;
+    }
+    &.Box{
+      @include border-inset(2px);
+      .Box-header {
+        margin: 0;
+      }
+    }
   }
 
   .news .Details
@@ -48,17 +76,17 @@
     border: 0;
   }
 
-  .Details .Box
-  {
-    padding: 4px;
-    margin: 4px;
-    border: initial;
-    border-top: inset 2px #999;
-    border-left: inset 2px #999;
-    border-bottom: inset 2px #ddd!important;
-    border-right: inset 2px #ddd;
-  }
 
+  /*Discover repositories Recommendation*/
+  .js-notice{
+    form.js-notice-dismiss{
+      button.btn {
+        @include border-outset(2px);
+        color: black;
+        background-color: $window-color;
+      }
+    }
+  }
 }
 
 
