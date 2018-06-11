@@ -100,3 +100,21 @@ table.files
 {
   border-right-width: 2px!important;
 }
+
+.numbers-summary, .repository-lang-stats, .branch-infobar, .commit-tease, .files {
+  background-color: $window-color !important;
+}
+
+.readme > h3:first-child {
+  background-color: $window-color !important;
+  border: none;
+}
+
+.navigation-focus {
+  background-color: #c0c0c0 !important;
+}
+
+.repository-content {
+  border: 2px solid #ddd;
+  padding: 5px;
+}

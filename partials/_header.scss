@@ -14,6 +14,44 @@
 
 }
 
+.pagehead {
+  background-color: $window-color !important;
+  border-bottom: none;
+}
+
+.social-count {
+  background-color: $window-color !important;
+  border-radius: 0;
+}
+
+.reponav {
+  .selected {
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #999;
+    background-color: $window-color !important;
+    border-radius: 0;
+    padding-top: 15px;
+    margin-top: 5px;
+  }
+
+  .js-selected-navigation-item:not(.select):first-child {
+    border-left: 2px solid #ddd;
+  }
+
+  .js-selected-navigation-item:not(.selected) {
+    border-top: 2px solid #ddd;
+    border-right: 2px solid #999;
+    border-radius: 0;
+    color: #000;
+    margin-top: 15px;
+  }
+}
+
+.repohead {
+  margin-bottom: 0px !important;
+}
+
 .mr-2.header-search-key-slash
 {
   display: none;

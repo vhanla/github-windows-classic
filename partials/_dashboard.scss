@@ -64,11 +64,19 @@
       border-bottom: inset 2px #ddd!important;
     }
     &.Box{
+      .Box-body {
+        background-color: $window-color !important;
+      }
       @include border-inset(2px);
       .Box-header {
         margin: 0;
       }
     }
+  }
+
+  .AvatarStack-body
+  {
+    background-color: $window-color !important;
   }
 
   .news .Details
