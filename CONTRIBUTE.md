@@ -21,6 +21,7 @@ The development of this custom userstyle is made easy using the following tools:
 
 
 ## <a name="csp">Disabling CSP since GitHub uses that policy</a>
+***NOTICE*** *This might not be necessary, if developer tools console doesn't complain about CSP on Github.com*
 
 Visit `about:config`
  Then disable CSP, i.e. `security.csp.enable = false`
@@ -31,7 +32,9 @@ Visit `about:config`
 
 Execute `./genlocalssl.sh` from localssl directory, or just use the provided self signed files already there.
 
-.vscode/settings.json already have settings that you might want to modify.
+.vscode/settings.json already have settings that you might need to modify.
+
+On Windows you have to replace relative path for certificate files to full path (e.g. c:/myproject/server.crt)
 
 FireFox will warn you when accessing the site served by Live Reload, press advanced and add it as temporary exception, or if you like add it permanently.
 
@@ -78,7 +81,7 @@ Finally, visit GitHub website and enable **Super CSS Inject**. It will add the m
 
 ## Finally
 
-You can modify the SCSS files, update `main.scss` file and **Watch Sass** will recompile it. Live Reload (the add-on) will detect the changes and reload it on the GitHub's page.
+You can modify the SCSS files, update `main.scss` file and **Watch Sass** will recompile it. Live Reload (the add-on) will detect the changes and reload it on the GitHub's page. And if you wish, make a PR.
 
 
 

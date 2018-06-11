@@ -32,3 +32,9 @@ If you would like to contribute to this repository, please...
 Please read the [CONTRIBUTE](./CONTRIBUTE.md) guide.
 
 
+## Contributors
+
+Thanks to [all who contributed](./acknowledgements.md).
+
+
+
