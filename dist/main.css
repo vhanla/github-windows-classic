@@ -12,6 +12,42 @@
   color: black !important;
 }
 
+.pagehead {
+  background-color: #d4d2cd !important;
+  border-bottom: none;
+}
+
+.social-count {
+  background-color: #d4d2cd !important;
+  border-radius: 0;
+}
+
+.reponav .selected {
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #999;
+  background-color: #d4d2cd !important;
+  border-radius: 0;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+.reponav .js-selected-navigation-item:not(.select):first-child {
+  border-left: 2px solid #ddd;
+}
+
+.reponav .js-selected-navigation-item:not(.selected) {
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #999;
+  border-radius: 0;
+  color: #000;
+  margin-top: 15px;
+}
+
+.repohead {
+  margin-bottom: 0px !important;
+}
+
 .mr-2.header-search-key-slash {
   display: none;
 }
@@ -125,6 +161,37 @@ body {
   padding: 8px 4px;
 }
 
+.branch-name {
+  background-color: #d4d2cd !important;
+  border-radius: 0;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+}
+
+.branch-name:hover {
+  text-decoration: none;
+}
+
+.branch-name:focus {
+  border-top: 2px solid #999;
+  border-left: 2px solid #999;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+.Box {
+  background-color: #d4d2cd !important;
+}
+
+.Box .Box-header {
+  background-color: #d4d2cd !important;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+}
+
 /*Dashboard*/
 .dashboard {
   /*Discover repositories Recommendation*/
@@ -235,8 +302,16 @@ body {
   border-top: 2px inset #999;
 }
 
+.dashboard .Details.Box .Box-body {
+  background-color: #d4d2cd !important;
+}
+
 .dashboard .Details.Box .Box-header {
   margin: 0;
+}
+
+.dashboard .AvatarStack-body {
+  background-color: #d4d2cd !important;
 }
 
 .dashboard .news .Details {
@@ -342,6 +417,25 @@ table.files {
 
 .btn:hover {
   border-right-width: 2px !important;
+}
+
+.numbers-summary, .repository-lang-stats, .branch-infobar, .commit-tease, .files {
+  background-color: #d4d2cd !important;
+}
+
+.readme > h3:first-child {
+  background-color: #d4d2cd !important;
+  border: none;
+}
+
+.navigation-focus {
+  background-color: #c0c0c0 !important;
+}
+
+.repository-content {
+  border: 2px solid #ddd;
+  border-top: 0;
+  padding: 5px;
 }
 
 .issues-listing .subnav form input.subnav-search-input {
